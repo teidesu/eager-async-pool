@@ -99,6 +99,13 @@ for await (const { idx, item, value, error } of asyncPool(executor, urls, { canc
 > If you want to cancel pending operations as well, you must handle
 > cancel token inside executor manually (or provide it to some library).
 
+### Modern mode
+Default exported entrypoint is compatible down to ES3. If your environment supports 
+ES6, you can instead use `require('eager-async-pool/modern')`, which exports the same API,
+but written using modern JavaScript.
+
+## API
+Please see [`index.d.ts`](https://github.com/teidesu/eager-async-pool/blob/master/lib/index.d.ts)
 
 ## Motivation
 Consider the common task of batch file upload/download.  
