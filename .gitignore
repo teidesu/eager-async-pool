@@ -1,0 +1,4 @@
+node_modules
+private
+.nyc_output
+.idea

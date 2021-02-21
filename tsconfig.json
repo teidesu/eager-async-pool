@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es3",
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "lib": [
+            "es2018"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
